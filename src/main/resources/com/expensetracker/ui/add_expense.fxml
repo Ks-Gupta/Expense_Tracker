@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.expensetracker.controller.AddExpenseController"
+            prefHeight="450.0" prefWidth="600.0">
+
+    <!-- Title -->
+    <Label text="Add Expense"
+           layoutX="230" layoutY="30"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <!-- Category dropdown -->
+    <Label text="Category:"
+           layoutX="100" layoutY="100" />
+    <ComboBox fx:id="categoryCombo"
+              layoutX="200" layoutY="95"
+              prefWidth="250" />
+
+    <!-- Amount -->
+    <Label text="Amount:"
+           layoutX="100" layoutY="150" />
+    <TextField fx:id="amountField"
+               layoutX="200" layoutY="145"
+               prefWidth="250"
+               promptText="Enter amount" />
+
+    <!-- Date -->
+    <Label text="Date:"
+           layoutX="100" layoutY="200" />
+    <DatePicker fx:id="datePicker"
+                layoutX="200" layoutY="195"
+                prefWidth="250" />
+
+    <!-- Note -->
+    <Label text="Note:"
+           layoutX="100" layoutY="250" />
+    <TextArea fx:id="noteField"
+              layoutX="200" layoutY="245"
+              prefWidth="250" prefHeight="80"
+              promptText="Optional" />
+
+    <!-- Save button -->
+    <Button text="Save Expense"
+            layoutX="230" layoutY="350"
+            prefWidth="150"
+            onAction="#handleAddExpense" />
+
+    <!-- Message Label -->
+    <Label fx:id="messageLabel"
+           layoutX="200" layoutY="400"
+           style="-fx-text-fill: green;" />
+
+</AnchorPane>

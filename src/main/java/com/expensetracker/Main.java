@@ -1,9 +1,22 @@
 package com.expensetracker;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main() {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/add_category.fxml"));
+        Scene scene = new Scene(loader.load());
+        stage.setScene(scene);
+        stage.setTitle("Add Category");
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
     }
 }
