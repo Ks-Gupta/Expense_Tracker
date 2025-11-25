@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class AddCategoryController {
+public class AddCategoryController extends BaseController {
 
     @FXML
     private TextField categoryField;
@@ -36,4 +36,10 @@ public class AddCategoryController {
             messageLabel.setStyle("-fx-text-fill: red;");
         }
     }
+
+    @FXML
+    public void goBack() {
+        switchScene("main_menu.fxml", "Expense Tracker - Menu");
+    }
+
 }

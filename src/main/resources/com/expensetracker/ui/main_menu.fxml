@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.expensetracker.controller.MainMenuController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 40;">
+
+    <Label text="Expense Tracker"
+           style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+
+    <Button text="Add Category"
+            prefWidth="200"
+            onAction="#openAddCategory" />
+
+    <Button text="Add Expense"
+            prefWidth="200"
+            onAction="#openAddExpense" />
+
+    <Button text="View Dashboard"
+            prefWidth="200"
+            onAction="#openDashboard" />
+
+    <Button text="Charts &amp; Analytics"
+            prefWidth="200"
+            onAction="#openCharts" />
+
+
+</VBox>

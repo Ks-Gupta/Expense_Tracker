@@ -34,4 +34,10 @@
            text=""
            style="-fx-text-fill: green;" />
 
+    <Button text="← Back"
+            layoutX="20"
+            layoutY="20"
+            onAction="#goBack" />
+
+
 </AnchorPane>

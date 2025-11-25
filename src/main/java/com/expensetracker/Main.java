@@ -9,10 +9,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/add_category.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/expensetracker/ui/main_menu.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setScene(scene);
-        stage.setTitle("Add Category");
+        stage.setTitle("Expense Tracker - Menu");
         stage.show();
     }
 

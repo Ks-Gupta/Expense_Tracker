@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.expensetracker.controller.DashboardController"
+            prefWidth="800" prefHeight="500">
+
+    <!-- Title -->
+    <Label layoutX="330" layoutY="20"
+           text="Expense Dashboard"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <!-- TableView -->
+    <TableView fx:id="expenseTable"
+               layoutX="50"
+               layoutY="70"
+               prefWidth="700"
+               prefHeight="350">
+
+        <columns>
+            <TableColumn fx:id="categoryId"
+                         text="No."
+                         prefWidth="50" />
+
+            <TableColumn fx:id="categoryCol"
+                         text="Category"
+                         prefWidth="150" />
+
+            <TableColumn fx:id="amountCol"
+                         text="Amount"
+                         prefWidth="120" />
+
+            <TableColumn fx:id="dateCol"
+                         text="Date"
+                         prefWidth="120" />
+
+            <TableColumn fx:id="noteCol"
+                         text="Note"
+                         prefWidth="200" />
+
+            <TableColumn fx:id="actionCol"
+                         text="Actions"
+                         prefWidth="110" />
+
+        </columns>
+
+    </TableView>
+
+    <!-- Message Label -->
+    <Label fx:id="messageLabel"
+           layoutX="50" layoutY="430"
+           style="-fx-text-fill: green;" />
+
+    <Button text="← Back"
+            layoutX="20"
+            layoutY="20"
+            onAction="#goBack" />
+
+
+</AnchorPane>

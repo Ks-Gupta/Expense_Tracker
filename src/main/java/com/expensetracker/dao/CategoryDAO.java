@@ -11,7 +11,7 @@ import java.util.List;
 public class CategoryDAO {
 
     public boolean addCategory(String name) {
-        String sql = "INSERT INTO category (name) VALUES (?)";
+        String sql = "INSERT INTO categories(name) VALUES (?)";
         try(Connection conn = DBConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
@@ -26,7 +26,7 @@ public class CategoryDAO {
     }
 
     public boolean updateCategory(int id, String newName) {
-        String sql = "UPDATE category SET name=? WHERE id=?";
+        String sql = "UPDATE categories SET name=? WHERE id=?";
         try(Connection conn = DBConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
@@ -41,7 +41,7 @@ public class CategoryDAO {
     }
 
     public boolean deleteCategory(int id) {
-        String sql = "DELETE FROM category WHERE id=?";
+        String sql = "DELETE FROM categories WHERE id=?";
         try(Connection conn = DBConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 

@@ -10,10 +10,11 @@ import java.util.List;
 public class ExpenseDAO {
 
     public boolean addExpense(Expense expense) {
-        String query = "INSERT INTO Expense(category_id, amount, date, note) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO expenses(category_id, amount, date, note) VALUES (?, ?, ?, ?)";
 
         try(Connection conn = DBConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(query)){
+
 
             stmt.setInt(1, expense.getCategoryId());
             stmt.setDouble(2, expense.getAmount());

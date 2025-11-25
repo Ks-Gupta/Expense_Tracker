@@ -7,7 +7,7 @@ import com.expensetracker.models.Expense;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class AddExpenseController {
+public class AddExpenseController extends BaseController {
 
     @FXML
     private ComboBox<Category> categoryCombo;
@@ -95,4 +95,10 @@ public class AddExpenseController {
         messageLabel.setText(msg);
         messageLabel.setStyle("-fx-text-fill: red;");
     }
+
+    @FXML
+    public void goBack() {
+        switchScene("main_menu.fxml", "Expense Tracker - Menu");
+    }
+
 }
