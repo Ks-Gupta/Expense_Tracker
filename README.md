@@ -1,5 +1,3 @@
-Here’s a clean and simple **README.md** you can use for your **Expense Tracker** project.
-If you want, I can customize it more based on your tech stack, screenshots, features, or installation steps.
 
 ---
 
@@ -50,7 +48,3 @@ This project is open-source and available under the **MIT License**.
 
 ---
 
-Want me to:
-✅ Add screenshots?
-✅ Write a more detailed README?
-✅ Add contribution guidelines, requirements, or badges?
